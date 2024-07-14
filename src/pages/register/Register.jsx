@@ -1,12 +1,15 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../pages/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
 
-    const {createUser} =useContext(AuthContext)
+    const {createUser } =useContext(AuthContext)
+
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const handleRegister = event => {
         event.preventDefault()
@@ -20,6 +23,8 @@ const Register = () => {
             .then(result => {
                 const user = result.user
                 console.log(user)
+                event.target.reset()
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => console.log(error.message))
 
@@ -34,7 +39,7 @@ const Register = () => {
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
-                            <h1 className="text-4xl font-semibold text-center py-5">Sign Up</h1>
+                            <h1 className="text-4xl font-semibold text-center py-5">Register</h1>
 
                             {/*Login from */}
                             <form onSubmit={handleRegister}>
@@ -78,7 +83,7 @@ const Register = () => {
                                 </div>
                             </div>
 
-                            <p className="text-center py-5">Don not have an account? <Link to='/login'><span className="text-[#FF3811] font-semibold">Sign In</span></Link> </p>
+                            <p className="text-center py-5">Already have an account? <Link to='/login'><span className="text-[#FF3811] font-semibold">Login</span></Link> </p>
                         </div>
                     </div>
                 </div>

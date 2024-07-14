@@ -26,7 +26,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Banner = () => {
     return (
-        <div className='h-96 mt-10 '>
+        <div className='h-96 mt-10  rounded-md'>
             {/* <h2 className="text-4xl text-red-500"> this banner section </h2> */}
             <>
                 <Swiper
@@ -41,11 +41,11 @@ const Banner = () => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                    className="mySwiper rounded-md"
                 >
                     <SwiperSlide><img src={slider4} alt="banner" /></SwiperSlide>
                     <SwiperSlide><img src={slider1} alt="banner" /> </SwiperSlide>
-                    <SwiperSlide> <img src={slider2} alt="banner" /></SwiperSlide>
+                    <SwiperSlide><img src={slider2} alt="banner" /></SwiperSlide>
                     <SwiperSlide><img src={slider3} alt="banner" /></SwiperSlide>
                     <SwiperSlide><img src={slider6} alt="banner" /></SwiperSlide>
                     <SwiperSlide><img src={slider8} alt="banner" /></SwiperSlide>

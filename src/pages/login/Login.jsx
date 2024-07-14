@@ -1,12 +1,17 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../pages/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import { AiFillGoogleCircle } from 'react-icons/ai';
+import { FaGithub } from "react-icons/fa";
 
 const Login = () => {
 
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleLogin, githubLogin } = useContext(AuthContext);
+
+    const location = useLocation()
+    const navigate = useNavigate()
 
     const handleLogin = event => {
         event.preventDefault()
@@ -14,11 +19,15 @@ const Login = () => {
         const from = event.target;
         const email = from.email.value;
         const password = from.password.value;
-        console.log(email, password)
+        // console.log(email, password)
         signIn(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user)
+                console.log('login ures',user)
+                alert('login succesfull')
+                event.target.reset()
+
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => console.log(error))
 
@@ -85,16 +94,14 @@ const Login = () => {
 
                                 <div className="flex gap-x-4  justify-center">
 
-                                    {/* <button className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-full text-4xl"><CiFacebook /></button> */}
+                                    <button onClick={() => googleLogin()} className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-full text-4xl"><AiFillGoogleCircle /></button>
 
-                                    {/* <button className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-xl text-4xl"><CiLinkedin /></button> */}
-
-                                    {/* <button className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-full text-4xl"><AiFillGoogleCircle /></button> */}
+                                    <button onClick={() => githubLogin()} className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-full text-4xl"> <FaGithub /></button>
 
                                 </div>
                             </div>
 
-                            <p className="text-center py-5">Don not have an account? <Link to='/register'><span className="text-[#FF3811] font-semibold">Sign Up</span></Link> </p>
+                            <p className="text-center py-5">Don not have an account? <Link to='/register'><span className="text-[#FF3811] font-semibold">Register</span></Link> </p>
 
 
                         </div>
