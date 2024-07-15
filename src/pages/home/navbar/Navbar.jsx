@@ -8,7 +8,6 @@ import { useContext } from "react";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
-
     const handleSignOut = () => {
         logOut()
             .then(result => {
@@ -55,6 +54,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
 
+
                     {
                         user &&
                         <div className="tooltip  tooltip-bottom " data-tip={user.email}>
@@ -72,6 +72,7 @@ const Navbar = () => {
                     }
 
                 </div>
+                
             </div>
         </div>
     );

@@ -1,9 +1,42 @@
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
+import Comment from "./Comment";
 
 const CardDetails = () => {
-
+    const { user } = useContext(AuthContext)
     const blogs = useLoaderData();
-    console.log('blog details:', blogs)
+
+    // comment box
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        const form = event.target;
+        const comment = form.comment.value;
+        
+        // server site data save kora
+        const commentBox = {
+            comment,
+            user,
+
+        }
+        fetch('http://localhost:5000/comments', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(commentBox)
+        })
+            .then(res => res.json())
+            .then(data => {
+                event.target.reset()
+                console.log(data)
+            })
+    }
+    // comment box
+
+    // const {userComment} = comment
+
 
     const { title, img, sort_description, description, category } = blogs
     return (
@@ -21,12 +54,18 @@ const CardDetails = () => {
 
                         <p> <span className="font-bold">Description:</span> <span className="text-slate-600 hover:text-[#080808] ">{description}</span></p>
 
-                        <textarea className="textarea textarea-primary" placeholder="comment box"></textarea> <br />
+                        {/* comment box */}
+                        
+                            
+                            <form onSubmit={handleSubmit}>
+                            <textarea name="comment" placeholder="Your comments" className="textarea textarea-bordered w-1/2" ></textarea> <br />
 
-                        <button className="btn btn-primary">Get Started</button>
+                            <input type="submit" value="submit" className="btn hover:bg-[#ca630a] bg-[#E67E22] text-white my-5" />
+                        </form>
                     </div>
                 </div>
             </div>
+            <Comment></Comment>
         </div>
     );
 }
