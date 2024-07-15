@@ -7,6 +7,7 @@ import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import PrivetRoutes from "../privetRoutes/PrivetRoutes";
 import ErrorPage from "../errorPage/ErrorPage";
+import TravelGuidesDetails from "../pages/travelGuides/TravelGuidesDetails";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
             path: '/details/:id',
             element: <PrivetRoutes><CardDetails></CardDetails></PrivetRoutes>,
             loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`)
+        },
+        {
+            path: '/guidesDetails/:id',
+            element: <PrivetRoutes> <TravelGuidesDetails></TravelGuidesDetails> </PrivetRoutes>,
+            loader: ({ params }) => fetch(`http://localhost:5000/guides/${params.id}`)
         },
         {
             path: '/wishlist',

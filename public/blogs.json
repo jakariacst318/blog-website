@@ -1,58 +1,46 @@
 [
     {
-        "title": "Cox Bazar",
-        "img": "https://i.ibb.co/dDtpjF2/cox-s-bazar.jpg",
-        "category": "Travel Tours" ,
-        "sort_description": "Cox's Bazar boasts the longest natural sea beach in the world, stretching over 120 kilometers along the Bay of Bengal.",
-        "description": "Cox's Bazar, located in southeastern Bangladesh, is renowned for having the longest natural sea beach in the world, stretching approximately 120 kilometers (75 miles) along the Bay of Bengal. This stunning coastal town is a major tourist destination, celebrated for its pristine sandy beaches, vibrant marine life, and breathtaking landscapes. #  Cox's Bazar, with its combination of natural beauty, cultural richness, and recreational opportunities, is a premier destination in Bangladesh, offering a unique and memorable experience for visitors."
+        "title": "HOW TO VISIT THE PYRAMIDS IN EGYPT",
+        "img": "https://i.ibb.co/p4Z5fg7/piramid.jpg",
+        "location": "Dahshur, south of Cairo" ,        
+        "description": "Also built for Pharaoh Sneferu around 2590 BCE, it is the first successfully completed smooth-sided pyramid and gets its name from the reddish hue of its limestone casing stones. It stands about 104 meters (341 feet) tall."
         
     },
     {
-        "title": "Historic Mosque City of Bagerhat",
-        "category": "Travel Tours" ,
-        "img": "https://i.ibb.co/jGHcTWt/Historic-Mosque.jpg",
-        "sort_description": "This UNESCO World Heritage Site is located in the southwestern part of Bangladesh. Bagerhat is renowned for its collection of historic mosques and Islamic monuments",
-        "description": "The Historic Mosque City of Bagerhat is an outstanding example of a medieval city built during the 15th century, located in the southwestern part of Bangladesh in the Bagerhat District of Khulna Division. This UNESCO World Heritage Site is renowned for its unique blend of Islamic and Bengali architectural styles, its impressive array of historic mosques, and its historical significance # The Historic Mosque City of Bagerhat stands as a testament to the rich history, architectural innovation, and cultural significance of medieval Bengal. It offers visitors a unique opportunity to step back in time and explore the legacy of one of the region's most important historical figures."
+        "title": "PETRA JORDAN TRAVEL GUIDE",
+        "img": "https://i.ibb.co/mNhm65w/jodan.jpg",
+        "location": " Ma'an Governorate, southwestern Jordan." ,        
+        "description": "A UNESCO World Heritage Site and one of the New Seven Wonders of the World, Petra is an ancient city carved into red sandstone cliffs by the Nabataeans over 2,000 years ago. Key attractions include the Treasury (Al-Khazneh), the Monastery (Ad-Deir), and the Siq (a narrow gorge leading to the city)."
         
     },
     {
-        "title": "Paharpur",
-        "category": "Travel Tours" ,
-        "img": "https://i.ibb.co/80fJWVt/Paharpur.jpg",
-        "sort_description": "Paharpur is the site of the Somapura Mahavihara, one of the largest and most important Buddhist monasteries in the Indian subcontinent. This 8th-century archaeological site is also a UNESCO World Heritage Site",
-        "description": "Paharpur, located in the Naogaon District of northwestern Bangladesh, is home to the Somapura Mahavihara, one of the most significant archaeological and historical sites in South Asia. This UNESCO World Heritage Site is renowned for its grand monastery, rich history, and exquisite architecture, making it a major attraction for historians, archaeologists, and tourists. # Paharpur, with its rich history, stunning architecture, and cultural significance, offers a fascinating glimpse into the ancient Buddhist heritage of Bangladesh. It remains a vital site for understanding the historical and religious development of the region"
+        "title": "BAGAN MYANMAR TRAVEL GUIDE",
+        "img": "https://i.ibb.co/58x8k6H/miyanmar.jpg",
+        "location": " Mandalay Region, central Myanmar.." ,        
+        "description": " An ancient city known for its vast archaeological area featuring over 2,000 Buddhist temples, pagodas, and monasteries. Key sites include Ananda Temple, Shwezigon Pagoda, and the stunning sunrise and sunset views over the temple-studded plains."
         
     },
     {
-        "title": "Sajek Valley",
-        "category": "Travel Tours" ,
-        "img": "https://i.ibb.co/YfD7BVS/sajek.jpg",
-        "sort_description": "Situated in the Chittagong Hill Tracts, Sajek Valley is a picturesque region known for its stunning natural beauty. The valley offers breathtaking views of the hills, dense forests, and serene landscapes. ",
-        "description": "Sajek is a stunning hill tract area located in the Rangamati District within the Chittagong Hill Tracts of southeastern Bangladesh. Renowned for its breathtaking landscapes, serene environment, and unique cultural heritage, Sajek has become a popular destination for nature lovers and adventure seekers # Sajek is nestled among the hills of the Kasalong range, offering panoramic views of rolling hills, deep valleys, and dense forests. The area's elevation provides a cool and refreshing climate, making it a perfect escape from the heat and hustle of city life."
+        "title": "ANG THONG THAILAND GUIDE",
+        "img": "https://i.ibb.co/6r640nq/thailand.jpg",
+        "location": "Bangkok Central Thailand" , 
+        "description": "The capital and largest city of Thailand, known for its vibrant street life, cultural landmarks, and bustling markets. Major attractions include the Grand Palace, Wat Arun, Wat Pho, and the bustling Khao San Road"
         
     },
     {
-        "title": "Srimangal",
-        "category": "Travel Tours" ,
-        "img": "https://i.ibb.co/kM0qb4H/Srimangal.jpg",
-        "sort_description": "Known as the Tea Capital of Bangladesh, Srimangal is located in the northeastern part of the country. It is famous for its lush tea gardens, rolling hills, and tranquil landscapes.",
-        "description": "Srimangal, often referred to as the Tea Capital of Bangladesh,is a picturesque town located in the Moulvibazar district of the Sylhet Division in northeastern Bangladesh. Known for its lush tea gardens, rolling hills, and diverse wildlife, Srimangal is a popular destination for both local and international tourists # One of the unique attractions of Srimangal is the seven color tea, a special tea that features seven distinct layers, each with a different flavor and color. This unique concoction can be found in select tea stalls and is a must-try for visitors."
+        "title": "IGUAZU FALLS ARGENTINA ",
+        "img": "https://i.ibb.co/N13bg3h/argentina.jpg",
+        "location": "Border of Argentina and Brazil, near the city of Puerto Iguazú in Argentina's Misiones province",
+        "description": "Iguazu Falls is one of the largest and most spectacular waterfall systems in the world, consisting of 275 individual falls spread over nearly 3 kilometers (1.86 miles) along the Iguazu River. The falls are divided into upper and lower sections, with the most famous and dramatic segment being the Devil's Throat (Garganta del Diablo), an impressive U-shaped cascade that plunges 80 meters (262 feet) into the river below. The surrounding area is part of the Iguazú National Park, a UNESCO World Heritage Site, which is home to diverse wildlife and lush subtropical rainforest."
         
     },
     {
-        "title": "Sylhet view",
-        "category": "Travel Tours" ,
-        "img": "https://i.ibb.co/VY7KNtf/sylet.jpg",
-        "sort_description": "Sylhet is a picturesque city located in the northeastern part of Bangladesh, known for its lush tea gardens, scenic landscapes, and rich cultural heritage",
-        "description": "Sylhet is famous for its expansive tea estates, which produce some of Bangladesh's finest tea. These gardens, with their verdant rolling hills, offer stunning scenery and a tranquil atmosphere. # The region is blessed with natural attractions like Jaflong, known for its stone collections and views of the Khasi Hills, and Ratargul Swamp Forest, one of the few freshwater swamp forests in Bangladesh. Lalakhal, with its crystal-clear blue waters, is another popular spot for boating and sightseeing"
+        "title": "ROCK ISLANDS SCENIC FLIGHT IN PALAU",
+        "img": "https://i.ibb.co/XF9MQzC/rock.jpg",
+        "location": "Palau, Micronesia, Western Pacific Ocean" , 
+        "description": "The Rock Islands of Palau are a stunning collection of over 200 limestone and coral islands, mostly uninhabited, situated in the Southern Lagoon of Palau. A scenic flight over these islands offers a breathtaking aerial view of the vibrant turquoise waters, lush greenery, and unique mushroom-shaped formations. Key highlights of the scenic flight include"
         
-    },
-    {
-        "title": "Sundarbans Mangrove Forest",
-        "category": "Travel Tours" ,
-        "img": "https://i.ibb.co/9YQjr37/Sundarbans.jpg",
-        "sort_description": "The Sundarbans is the largest mangrove forest in the world, spanning Bangladesh and India. It is renowned for its rich biodiversity, including the Royal Bengal Tiger, and is a UNESCO World Heritage Site.",
-        "description": "The Sundarbans Mangrove Forest is one of the most significant and unique ecosystems in the world, located in the delta region of the Padma, Meghna, and Brahmaputra river basins, primarily in Bangladesh with a smaller portion in India. It is the largest tidal halophytic mangrove forest globally and is renowned for its rich biodiversity, complex ecosystem, and the critical role it plays in the environment # The Sundarbans is a popular destination for eco-tourists and wildlife enthusiasts. Activities include guided boat tours through the waterways, bird watching, and exploring the dense forest to spot wildlife, especially the elusive Bengal tiger"
         
     }
+    
 ]
