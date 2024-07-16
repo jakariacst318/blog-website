@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { useContext } from "react";
+import logo from '../../../../public/logo.png'
 
 
 
@@ -43,7 +44,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <Link to='/'><h2 className="btn btn-ghost normal-case text-xl"> Blog Website </h2> </Link>
+                    <Link to='/'><img className="w-28" src={logo} alt="logo" /> </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
+import './Comment.css'
 
 const Comment = () => {
 
@@ -25,7 +26,7 @@ const Comment = () => {
                             <div className="flex gap-5 mb-10 items-center">
                                 <img className="rounded-full w-8 h-8 mr-2" src={user.photoURL} alt="img" />
                                 <div>
-                                    <p>{user.displayName}</p>
+                                    <p className="font-semibold">{user.displayName}</p>
                                     <p>{comment.comment}</p>
                                 </div>
                             </div>
