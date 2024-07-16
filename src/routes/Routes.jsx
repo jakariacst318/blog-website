@@ -8,7 +8,8 @@ import Register from "../pages/register/Register";
 import PrivetRoutes from "../privetRoutes/PrivetRoutes";
 import ErrorPage from "../errorPage/ErrorPage";
 import TravelGuidesDetails from "../pages/travelGuides/TravelGuidesDetails";
-
+import AllBlogs from "../pages/allBlogs/AllBlogs";
+import AddBlog from "../pages/addBlog/AddBlog";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,15 @@ const router = createBrowserRouter([
             path: '/wishlist',
             element: <PrivetRoutes><Wishlist></Wishlist></PrivetRoutes>
         },
+        {
+            path: 'all_blogs',
+            element: <AllBlogs></AllBlogs>
+        },
+        {
+            path: 'add_blog',
+            element: <AddBlog></AddBlog>
+        },
+        
         {
             path: 'login',
             element: <Login></Login>

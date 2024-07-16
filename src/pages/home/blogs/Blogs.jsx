@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import BlogKard from "./BlogKard";
 
-
-
 const Blogs = () => {
 
     const [blogs, setBlogs] = useState([]);
@@ -26,7 +24,9 @@ const Blogs = () => {
                     blogs.map(blog => <BlogKard
                         key={blog._id} blog={blog}></BlogKard>)
                 }
+
             </div>
+            
         </div>
     );
 };
