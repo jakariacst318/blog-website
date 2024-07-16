@@ -16,22 +16,31 @@ const AddBlog = () => {
         const photo = form.photo.value;
 
 
-        const newCraft = { title, category, sortDescription, longDescription, photo }
-        
+        const newBlog = { title, category, sortDescription, longDescription, photo }
+
 
         //  send data to the server
-       
+        fetch('http://localhost:5000/addBlog', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newBlog)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
 
-                if (newCraft) {
+                if (data.insertedId) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'Blog Added Successfully',
+                        text: 'Add Blog successfully',
                         icon: 'success',
                         confirmButtonText: 'Done'
                     })
                 }
 
-            
+            })
 
 
     }
@@ -91,6 +100,7 @@ const AddBlog = () => {
                 {/* category */}
                 <select className="font-semibold text-xl text-white bg-slate-500 py-5 px-3 rounded-xl my-6" id="category">
                     <option value="Travel Tours">Travel Tours</option>
+                    <option value="Sirajganj">Sirajganj</option>
                     <option value="Bangladesh">Bangladesh</option>
                     <option value="THAILAND">THAILAND</option>
                     <option value="MYANMAR">MYANMAR</option>
