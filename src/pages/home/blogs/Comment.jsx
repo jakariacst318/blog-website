@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import './Comment.css'
+import { AiOutlineComment } from "react-icons/ai";
 
 const Comment = () => {
 
@@ -17,7 +18,7 @@ const Comment = () => {
 
     return (
         <div className="ms-4">
-            <h2 className="text-xl font-semibold mb-4">Total Comments: {comments.length}</h2>
+            <h2 className="text-xl font-semibold mb-4 flex items-center "><span className="mr-2 text-orange-500"><AiOutlineComment /></span> Comments: <span className="text-orange-500 ms-2">{comments.length}</span></h2>
             {comments.map((comment) => (
                 <div key={comment._id}>
                     <div >

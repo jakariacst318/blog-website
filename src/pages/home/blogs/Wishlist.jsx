@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { Link,  } from "react-router-dom";
 import Swal from "sweetalert2";
+import { CiCircleRemove } from "react-icons/ci";
 
 const Wishlist = () => {
     const { user, _id} = useContext(AuthContext)
@@ -48,9 +49,8 @@ const Wishlist = () => {
     }
     return (
         <div>
-            <h3 className=" text-3xl font "> Wishlist list </h3>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-10 justify-center mb-20 ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-10 justify-center my-20 ">
 
                 {
                     item.map(p => (
@@ -70,7 +70,7 @@ const Wishlist = () => {
                                         </div>
 
                                         <button onClick={() => handleDelete(p._id)}
-                                            className="badge badge-outline py-4 px-4 hover:bg-[#ca630a] bg-[#E67E22] hover:border-0 border-0 text-white"><span></span> Remove
+                                            className="badge badge-outline py-4 px-4 hover:bg-[#ca630a] bg-[#E67E22] hover:border-0 border-0 text-white"><span className="mr-2 text-white text-2xl"><CiCircleRemove /> </span> Remove
                                         </button>
                                     </div>
                                 </div>

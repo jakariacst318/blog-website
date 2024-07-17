@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 
 const AllBlogCard = ({ allBLog }) => {
 
@@ -25,8 +26,8 @@ const AllBlogCard = ({ allBLog }) => {
                             <Link to={`/update/${_id}`}>Update</Link>
                         </div>
                         
-                        <div className="badge badge-outline py-4 px-4 hover:bg-[#ca630a] bg-[#E67E22] hover:border-0 border-0 text-white">
-                            <Link to='/add_blog'>Add</Link>
+                        <div className="badge badge-outline py-4 px-4 hover:bg-[#ca630a] bg-[#E67E22] hover:border-0 border-0 text-white ">
+                            <Link to='/add_blog' className="flex items-center"> <span className="mr-2 text-white"><AiOutlinePlusCircle /></span> Add</Link>
                         </div>
                     </div>
                 </div>

@@ -8,11 +8,11 @@ const Footer = () => {
                     <p className='ms-6 font-semibold text-lg'>TRAVEL</p>
                 </div>
                 <div>
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <span className="footer-title">Travel</span>
+                    <a className="link link-hover">cox bazar</a> 
+                    <a className="link link-hover">Thailand</a>
+                    <a className="link link-hover">Sylhet</a>
+                    <a className="link link-hover">Sajek valley</a>
                 </div>
                 <div>
                     <span className="footer-title">Company</span>

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
-
+import { AiOutlinePlusCircle } from "react-icons/ai";
 
 
 const AddBlog = () => {
@@ -50,7 +50,7 @@ const AddBlog = () => {
 
     return (
         <div>
-            <h2 className="text-orange-500  text-center font-semibold text-3xl "> Add Blog</h2>
+            <h2 className=" flex items-center justify-center mt-5 mb-10 font-semibold text-3xl"> <span className="mr-2 text-orange-500"><AiOutlinePlusCircle /></span> Add Blog</h2>
 
 
 
