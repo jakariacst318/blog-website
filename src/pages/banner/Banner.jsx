@@ -7,11 +7,8 @@ import slider8 from '../../assets/images (5).jpeg'
 import slider9 from '../../assets/images (6).jpeg'
 
 
-// import React, {useRef, useState} from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -27,7 +24,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Banner = () => {
     return (
         <div className='h-96 mt-10  rounded-md'>
-            {/* <h2 className="text-4xl text-red-500"> this banner section </h2> */}
+           
             <>
                 <Swiper
                     spaceBetween={30}

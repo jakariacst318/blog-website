@@ -19,40 +19,16 @@ const Login = () => {
         const from = event.target;
         const email = from.email.value;
         const password = from.password.value;
-        // console.log(email, password)
         signIn(email, password)
             .then(result => {
                 const user = result.user;
-                console.log('login ures',user)
-                alert('login succesfull')
+                console.log('login user',user)
+                alert('login successful')
                 event.target.reset()
 
                 navigate(location?.state ? location.state : '/');
             })
             .catch(error => console.log(error))
-
-        // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        // .then(() => {
-        // const loggedInUser = result.user;
-        // console.log(loggedInUser)
-        // const user = { email }
-        // navigate click location update old
-        // navigate(location?.state ? location?.state : '/')
-
-
-        // get access token
-        // axios.post('https://cars-doctor-server-sigma.vercel.app/jwt', user, { withCredentials: true })
-        //     .then(res => {
-        //         // console.log(res.data)
-        //         if (res.data.success) {
-        //             // navigate click location niye jabe new
-        //             navigate(location?.state ? location?.state : '/')
-        //         }
-        //     })
-        // })
-        // .catch(error =>
-        //     console.log(error)
-        // )
     }
 
 

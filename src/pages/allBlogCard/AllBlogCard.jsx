@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const AllBlogCard = ({ allBLog }) => {
 
-    const {_id, title, category, sortDescription, longDescription, photo } = allBLog
+    const {_id, title, category, sortDescription, longDescription, photo, } = allBLog
 
     return (
         <div>

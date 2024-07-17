@@ -1,9 +1,11 @@
+import { useContext } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 
 const AddBlog = () => {
-
+    const { user } = useContext(AuthContext)
     const handleAddCoffee = event => {
         event.preventDefault();
 
@@ -14,9 +16,9 @@ const AddBlog = () => {
         const sortDescription = form.sortDescription.value;
         const longDescription = form.longDescription.value;
         const photo = form.photo.value;
+        const email = user.email;
 
-
-        const newBlog = { title, category, sortDescription, longDescription, photo }
+        const newBlog = { title, category, sortDescription, longDescription, photo ,email }
 
 
         //  send data to the server
@@ -38,6 +40,7 @@ const AddBlog = () => {
                         icon: 'success',
                         confirmButtonText: 'Done'
                     })
+                    event.target.reset()
                 }
 
             })
@@ -47,7 +50,7 @@ const AddBlog = () => {
 
     return (
         <div>
-            <h2 className="text-orange-500  text-center font-semibold text-3xl "> this is add blog</h2>
+            <h2 className="text-orange-500  text-center font-semibold text-3xl "> Add Blog</h2>
 
 
 

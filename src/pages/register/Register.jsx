@@ -71,16 +71,6 @@ const Register = () => {
 
                             <div >
                                 <p className="text-[#444444] text-xl font-medium text-center pt-3 pb-6">Or Log In with</p>
-
-                                <div className="flex gap-x-4  justify-center">
-
-                                    {/* <button className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-full text-4xl"><CiFacebook /></button> */}
-
-                                    {/* <button className="text-[#FF3811] hover:bg-[#d83312] hover:text-white rounded-xl text-4xl"><CiLinkedin /></button> */}
-
-                                    {/* <button className="text-[#FF3811]  hover:bg-[#d83312] hover:text-white rounded-full text-4xl"><AiFillGoogleCircle /></button> */}
-
-                                </div>
                             </div>
 
                             <p className="text-center py-5">Already have an account? <Link to='/login'><span className="text-[#FF3811] font-semibold">Login</span></Link> </p>
