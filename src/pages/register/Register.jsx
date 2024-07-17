@@ -1,12 +1,14 @@
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../pages/login.svg'
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
 
-    const {createUser } =useContext(AuthContext)
+    const { createUser } = useContext(AuthContext)
+    const [registerError, setRegisterError] = useState('')
+    const [success, setSuccess] = useState ('')
 
     const location = useLocation()
     const navigate = useNavigate()
@@ -18,6 +20,23 @@ const Register = () => {
         const email = from.email.value;
         const password = from.password.value;
         console.log(name, email, password)
+
+        if (password.length < 6) {
+            setRegisterError('must be at least 6 character');
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setRegisterError('Your password upper case characters');
+            return;
+        }
+        else if (!/[a-z]/.test(password)) {
+            setRegisterError('Your password Lower case characters');
+            return;
+        }
+
+        // reset 
+        setRegisterError('')
+        setSuccess('')
 
         createUser(email, password)
             .then(result => {
@@ -43,32 +62,38 @@ const Register = () => {
 
                             {/*Login from */}
                             <form onSubmit={handleRegister}>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text text-xl font-semibold">Name</span>
-                                </label>
-                                <input type="text" name="name" required placeholder="Name" className="input input-bordered" />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text text-xl font-semibold">Email</span>
-                                </label>
-                                <input type="text" name="email" required placeholder="email" className="input input-bordered" />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text text-xl font-semibold">Password</span>
-                                </label>
-                                <input type="password" name="password" required placeholder="password" className="input input-bordered" />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
-                            </div>
-                            <div className="form-control mt-6 ">
-                                <input type="submit" value="Register" className="btn bg-[#FF3811] hover:bg-[#d83312] text-white" />
-                            </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text text-xl font-semibold">Name</span>
+                                    </label>
+                                    <input type="text" name="name" required placeholder="Name" className="input input-bordered" />
+                                </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text text-xl font-semibold">Email</span>
+                                    </label>
+                                    <input type="text" name="email" required placeholder="email" className="input input-bordered" />
+                                </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text text-xl font-semibold">Password</span>
+                                    </label>
+                                    <input type="password" name="password" required placeholder="password" className="input input-bordered" />
+                                    <label className="label">
+                                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div className="form-control mt-6 ">
+                                    <input type="submit" value="Register" className="btn bg-[#FF3811] hover:bg-[#d83312] text-white" />
+                                </div>
                             </form>
 
+                            {
+                                registerError && <p className="text-red-600">{registerError}</p>
+                            }
+                            {
+                                success && <p className="text-green-600">{success}</p>
+                            }
                             <div >
                                 <p className="text-[#444444] text-xl font-medium text-center pt-3 pb-6">Or Log In with</p>
                             </div>
