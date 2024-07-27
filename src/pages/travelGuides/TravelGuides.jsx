@@ -7,7 +7,7 @@ const TravelGuides = () => {
     const [guides, setGuides] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/guides')
+        fetch('https://blog-website-server-beta.vercel.app/guides')
             .then(res => res.json())
             .then(data => setGuides(data))
     })

@@ -9,7 +9,7 @@ const Wishlist = () => {
 
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/wishlist/${user?.email}`)
+        fetch(`https://blog-website-server-beta.vercel.app/wishlist/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data)
@@ -28,12 +28,12 @@ const Wishlist = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/addBlog/${_id}`, {
+                fetch(`https://blog-website-server-beta.vercel.app/addBlog/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data)
+                        // console.log(data)
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",

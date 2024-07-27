@@ -20,7 +20,7 @@ const CardDetails = () => {
             user,
 
         }
-        fetch('http://localhost:5000/comments', {
+        fetch('https://blog-website-server-beta.vercel.app/comments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

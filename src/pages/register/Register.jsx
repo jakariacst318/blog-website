@@ -19,7 +19,7 @@ const Register = () => {
         const name = from.name.value;
         const email = from.email.value;
         const password = from.password.value;
-        console.log(name, email, password)
+        console.log(name)
 
         if (password.length < 6) {
             setRegisterError('must be at least 6 character');
@@ -41,6 +41,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const user = result.user
+                alert('register successful')
                 console.log(user)
                 event.target.reset()
                 navigate(location?.state ? location.state : '/');

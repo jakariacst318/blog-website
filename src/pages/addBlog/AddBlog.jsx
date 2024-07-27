@@ -22,7 +22,7 @@ const AddBlog = () => {
 
 
         //  send data to the server
-        fetch('http://localhost:5000/addBlog', {
+        fetch('https://blog-website-server-beta.vercel.app/addBlog', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -31,7 +31,7 @@ const AddBlog = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
 
                 if (data.insertedId) {
                     Swal.fire({

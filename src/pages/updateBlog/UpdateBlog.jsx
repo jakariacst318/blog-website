@@ -22,7 +22,7 @@ const UpdateBlog = () => {
 
 
         //  send data to the server
-        fetch(`http://localhost:5000/addBlog/${_id}`, {
+        fetch(`https://blog-website-server-beta.vercel.app/addBlog/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -31,7 +31,7 @@ const UpdateBlog = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
 
                 if (data.modifiedCount > 0) {
                     Swal.fire({

@@ -8,7 +8,7 @@ const Comment = () => {
     const { user } = useContext(AuthContext)
 
     const [comments, setComment] = useState([])
-    const url = `http://localhost:5000/comments`;
+    const url = `https://blog-website-server-beta.vercel.app/comments`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

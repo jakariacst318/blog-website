@@ -25,27 +25,27 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <PrivetRoutes><CardDetails></CardDetails></PrivetRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`)
+                loader: ({ params }) => fetch(`https://blog-website-server-beta.vercel.app/blogs/${params.id}`)
             },
             {
                 path: '/guidesDetails/:id',
                 element: <PrivetRoutes> <TravelGuidesDetails></TravelGuidesDetails> </PrivetRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/guides/${params.id}`)
+                loader: ({ params }) => fetch(`https://blog-website-server-beta.vercel.app/guides/${params.id}`)
             },
             {
                 path: '/wishlist',
                 element: <PrivetRoutes><Wishlist></Wishlist></PrivetRoutes>,
-                loader: () => fetch('http://localhost:5000/addBlog')
+                loader: () => fetch('https://blog-website-server-beta.vercel.app/addBlog')
             },
             {
                 path: '/all_blogs',
                 element: <AllBlogs></AllBlogs>,
-                loader: () => fetch('http://localhost:5000/addBlog')
+                loader: () => fetch('https://blog-website-server-beta.vercel.app/addBlog')
             },
             {
                 path: '/update/:id',
                 element: <PrivetRoutes> <UpdateBlog></UpdateBlog> </PrivetRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/addBlog/${params.id}`)
+                loader: ({ params }) => fetch(`https://blog-website-server-beta.vercel.app/addBlog/${params.id}`)
             },
 
             {

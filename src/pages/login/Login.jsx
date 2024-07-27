@@ -22,7 +22,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 const user = result.user;
-                console.log('login user',user)
+                console.log(user)
                 alert('login successful')
                 event.target.reset()
 

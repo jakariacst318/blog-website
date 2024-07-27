@@ -21,11 +21,11 @@ const Navbar = () => {
 
 
     const NavItems = <>
-        <li> <Link to='/'>Home </Link> </li>
-        <li> <Link to='/add_blog'>Add Blog </Link> </li>
-        <li> <Link to='/all_blogs'>All blogs</Link> </li>
-        <li> <Link to='/featured_blogs'>Featured Blogs</Link> </li>
-        <li> <Link to='/wishlist'> Wishlist</Link> </li>
+        <li className="font-semibold"> <Link to='/'>Home </Link> </li>
+        <li className="font-semibold"> <Link to='/add_blog'>Add Blog </Link> </li>
+        <li className="font-semibold"> <Link to='/all_blogs'>All blogs</Link> </li>
+        <li className="font-semibold"> <Link to='/featured_blogs'>Featured Blogs</Link> </li>
+        <li className="font-semibold"> <Link to='/wishlist'> Wishlist</Link> </li>
 
     </>
 
